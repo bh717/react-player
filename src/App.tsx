@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import { Stream } from "@cloudflare/stream-react";
-
+import ReactPlayer from "react-player";
 function App() {
   // const [source, setSource] = useState("");
   // const [playing, setPlaying] = useState(false);
@@ -41,10 +41,15 @@ function App() {
   //     />
   //   </div>
   // );
-  const videoIdOrSignedUrl = "https://elasticbeanstalk-us-east-2-045749248414.s3.amazonaws.com/1665446699465";
   return (
     <div>
-      <Stream controls src={videoIdOrSignedUrl} />
+      {/* <Stream controls src={videoIdOrSignedUrl} /> */}
+      {/* <video src ={videoIdOrSignedUrl}/> */}
+      <ReactPlayer playing url='https://elasticbeanstalk-us-east-2-045749248414.s3.amazonaws.com/1665446699465'
+                height='100%'
+                width='100%'
+                // controls={true}
+            />
     </div>
   );
 }
