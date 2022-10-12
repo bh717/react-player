@@ -11,6 +11,10 @@
     "@types/node": "^16.11.65",
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
+    "aws-sdk": "^2.1231.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-player": "^2.11.0",
@@ -42,5 +46,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "https://react-player-backend.herokuapp.com/"
 }

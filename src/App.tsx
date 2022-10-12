@@ -1,55 +1,41 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import { Stream } from "@cloudflare/stream-react";
 import ReactPlayer from "react-player";
+import AWS from "aws-sdk";
+
 function App() {
-  // const [source, setSource] = useState("");
-  // const [playing, setPlaying] = useState(false);
+  // const [source, setSource] = useState<any>();
+  const [source, setSource] = useState("/api/annotate");
+  const [playing, setPlaying] = useState(false);
 
   // useEffect(() => {
-  //   fetch("/api/annotate", {
+  //   const endpointUrl = "api/annotate";
+  //   fetch(`${process.env.BASE_API_URL}/${endpointUrl}`, {
   //     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
   //   }).then((res) => {
-  //     setSource(String(res));
-  //   })
-  // });
+  //     console.log(res);
+  //     setSource(res);
+  //   });
+  // }, []);
+
   // return (
   //   <div className="App">
   //     <ReactPlayer
-  //       // onProgress={onProgress}
-  //       playsinline={true}
-  //       url={[{ src: source, type: "video/mp4;" }]} // video location
+  //       playing={true}
+  //       url={source} // video location
   //       controls // gives the front end video controls
   //       width="100%"
-  //       className="react-player"
   //       height="100%"
-  //       allow="autoplay; encrypted-media"
-  //       allowFullScreen
-  //       // muted={true}
-  //       playing={playing}
-  //       onPlay={() => setPlaying(true)}
-  //       // onPause={() => setPlaying(false)} //part of the attempt to fix
-  //       // onSeek={(seek) => playerSeeker(seek)} //part of the attempt to fix
-  //       config={{
-  //         file: {
-  //           attributes: {
-  //             controlsList: "nodownload",
-  //           },
-  //         },
-  //       }}
-  //       onContextMenu={(e: any) => e.preventDefault()}
   //     />
   //   </div>
   // );
+
   return (
     <div>
-      {/* <Stream controls src={videoIdOrSignedUrl} /> */}
-      {/* <video src ={videoIdOrSignedUrl}/> */}
-      <ReactPlayer playing url='https://elasticbeanstalk-us-east-2-045749248414.s3.amazonaws.com/1665446699465'
-                height='100%'
-                width='100%'
-                // controls={true}
-            />
+      <video id="video" width="1280" height="720" controls>
+        Your browser does not support the video tag.
+        <source src={source} type="video/mp4" />
+      </video>
     </div>
   );
 }
