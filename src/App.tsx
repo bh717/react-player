@@ -5,7 +5,7 @@ import AWS from "aws-sdk";
 
 function App() {
   // const [source, setSource] = useState<any>();
-  const [source, setSource] = useState("/api/annotate");
+  const [source, setSource] = useState("https://react-player-backend.herokuapp.com/api/annotate");
   const [playing, setPlaying] = useState(false);
 
   // useEffect(() => {
