@@ -13,28 +13,10 @@ function App() {
     <div className="App">
       <ReactPlayer
           url={source}
-          muted={true}
-          playing={true}
           controls={false}
-          loop={true}
           width="100%"
           height="100%"
-          playsinline={true}
-          onStart={() => setLoaded(true)}
-          config={{
-            youtube: {
-              playerVars: {
-                showinfo: 0,
-                autoplay: 0,
-                color: "white",
-                enablejsapi: 1,
-                disablekb: 1,
-                wmode: "transparent",
-                modestbranding: 1,
-                iv_load_policy: 3,
-              },
-            },
-          }}
+          
         />
 
     </div>
