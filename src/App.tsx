@@ -34,7 +34,7 @@ function App() {
     <div> 
       <video width="100%" height="100%" autoPlay loop muted playsInline>
         Your browser does not support the video tag.
-        <source src={source} type="video/mp4" />
+        <source src="https://elasticbeanstalk-us-east-2-045749248414.s3.amazonaws.com/1665446699465" type="video/mp4" />
       </video>
     </div>
 
