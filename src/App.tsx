@@ -5,24 +5,13 @@ import ReactPlayer from "react-player";
 
 function App() {
   // const [source, setSource] = useState<any>();
-  const [source, setSource] = useState("https://react-player-backend.herokuapp.com/works-in-chrome-and-safari1");
+  const [source, setSource] = useState("https://react-player-backend.herokuapp.com/works-in-chrome-and-safari");
   const [loaded, setLoaded] = useState(false);
   // const [playing, setPlaying] = useState(false);
-
-  // useEffect(() => {
-  //   const endpointUrl = "api/annotate";
-  //   fetch(`${process.env.BASE_API_URL}/${endpointUrl}`, {
-  //     headers: { Authorization: "Bearer " + localStorage.getItem("token") },
-  //   }).then((res) => {
-  //     console.log(res);
-  //     setSource(res);
-  //   });
-  // }, []);
 
   return (
     <div className="App">
       <ReactPlayer
-          // style={{ opacity: loaded ? 1 : 0 }}
           url={source}
           muted={true}
           playing={true}
