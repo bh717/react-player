@@ -5,7 +5,7 @@ import ReactPlayer from "react-player";
 
 function App() {
   // const [source, setSource] = useState<any>();
-  const [source, setSource] = useState("https://react-player-backend.herokuapp.com/works-in-chrome-and-safari");
+  const [source, setSource] = useState("https://react-player-backend.herokuapp.com/works-in-chrome-and-safari1");
   const [loaded, setLoaded] = useState(false);
   // const [playing, setPlaying] = useState(false);
 
