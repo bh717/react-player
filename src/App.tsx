@@ -57,7 +57,7 @@ function App() {
         Your browser does not support the video tag.
         {/* <source src="https://elasticbeanstalk-us-east-2-045749248414.s3.amazonaws.com/1665446699465" type="video/mp4" /> */}
         {/* <source src="./Firstview_high.mp4" type="video/mp4" /> */}
-        <source src="./video.mp4" type="video/mp4" />
+        <source src="./works-in-chrome-and-safari" type="video/mp4" />
       </video>
     </div>
   );
