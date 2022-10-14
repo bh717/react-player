@@ -47,5 +47,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://react-player-backend.herokuapp.com/"
+  "proxy": "http://localhost:3000/"
 }
